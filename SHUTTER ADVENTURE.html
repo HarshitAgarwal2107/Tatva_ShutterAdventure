@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&family=Vina+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Vina+Sans&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout Example</title>
+<style>
+  .txt1{
+    font-family: "Vina Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 125px;
+    line-height: 0.9;
+    margin-bottom: 0%;
+  }
+  .txt2{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 10%;
+  }
+  .txt3{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 20%;
+    margin-bottom: 0%;
+  }
+  .txt4{
+    font-family: "Vina Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+    line-height: 0.9;
+    margin-bottom: 0%;
+  }
+  .txt5{
+    color: white;
+    font-family: "Vina Sans", sans-serif;
+    font-weight: 150;
+    font-style: normal;
+    text-align: center;
+    font-size: 40px;
+    line-height: 0.5;
+    margin-bottom: 0%;
+  }
+  .txt6{
+    font-family: "Vina Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 125px;
+    line-height: 0.9;
+    padding-top: 0%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+  }
+  .txt7{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 1%;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-bottom: 0%;
+    line-height: 1.5;
+  }
+  .txt8{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 0%;
+  }
+  body, html {
+    background-color: #f7be25;
+    height: 100%;
+    margin: 0;
+  }
+
+  .header, #main, .footer {
+    display: flex;
+    width: 100%;
+  }
+
+  .header{
+    height: 20%;
+  }
+
+  .vertical-div {
+    flex: 1;
+  }
+
+  .center-text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+  }
+  .main-right{
+    background-image: url(save.jpg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+
+.button-1 {
+  background-color: #f04414;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Vina Sans", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  height: 50px;
+  list-style: none;
+  padding:10%;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 5%;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #f04414a6;
+}
+
+.but1{
+  padding-left: 10%;
+}
+.but2{
+  text-align: center;
+}
+.img1{
+  height: 60%;
+  padding: 5%;
+}
+.img2{
+  width: 100%;
+  padding-top: 10%;
+}
+.img3{
+  height: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.vertical-right{
+  padding: 10%;
+  padding-right: 5%;
+  text-align: right;
+}
+.vertical-div-inner{
+  height: 70%;
+  width: 70%;
+  padding: 15%;
+  text-align: center;
+}
+.fa{
+  text-decoration: none;
+  font-size: 25px;
+  padding: 1%
+}
+.fa-instagram,.fa-whatsapp{
+  color: black;
+}
+.foot1{
+  font-family: "Vina Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 30px;
+    line-height: 0.9;
+}
+.foot2{
+  font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 20%;
+    margin-bottom: 0%;
+    padding-bottom: 2%;
+}
+.foot3{
+  color: black;
+  text-decoration: none;
+}
+.footer{
+  padding-bottom: 10%;
+  padding-top: 5%;
+}
+#main2{
+  display: none;
+}
+.container {
+  display: flex;
+}
+
+.flexbox {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    #main, .footer,.header,.container{
+      flex-direction: column;
+      height:auto;
+    }
+    #main2{
+        margin-top:50%;
+    }
+    .header{
+        margin:0%;
+        padding:0%;
+    }
+    .img1{
+        width:25%;
+        padding-left:34.5%;
+        padding-right:34.5%;
+        margin-bottom:-20%;
+    }
+    .img2{
+       width:75%;
+        padding-left:12.5%;
+        padding-right:12.5%;
+        margin-bottom:-25%;
+    }.img3{
+       width:50%;
+        padding-left:25%;
+        padding-right:25%;
+        margin-bottom:-15%;
+        margin-top:-10%;
+    }
+    .vertical-div{
+    }
+    .txt5{
+        font-weight:200;
+        font-size:20px;
+    }
+    .txt1{
+        text-align:center;
+        padding:0%;
+        font-size:100px;
+    }
+    .txt2{
+        text-align:center;
+        padding:0%;
+    }
+    .txt7{
+         padding-left: 0%;
+        padding-right: 0%;
+        margin-bottom:10%;
+    }
+   .but1{
+       padding:0%;
+       margin:0%;
+       text-align:center;
+   }
+   .vertical-div-inner{
+       padding:none;
+       
+   }
+   .button-1{
+       margin:0%;
+   }
+   
+}
+
+  
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="vertical-div">
+      <img class="img3" src="DSO.png">
+      <img class="img1" src="WhatsApp_Image_2024-04-06_at_23.21.04_bc8f3d15-removebg-preview.png">
+    </div>
+    <div class="vertical-div">
+    </div>
+    <div class="vertical-div">
+        <img class="img2" src="lpu log.png">
+    </div>
+  </header>
+  <main id="main">
+    <div class="vertical-div main-left">
+      <p class="txt1">SHUTTER ADVENTURE</p>
+      <p class="txt2">CAPTURE THE THRILL OF FUN</p>
+      <p class="but1"><button class="button-1" onclick="km()">KNOW MORE</button>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1kSuChlVXFC-WWRNzBQ4kJ3yrnU6V65o3L-KyRm36XommCw/viewform?usp=sf_link"><button class="button-1">REGISTER</button></a></p>
+    </div>
+    <div class="vertical-div main-right">
+      <div class="vertical-div-inner"><br><br>
+        <p class="txt5">DATE: 13<sup>th</sup> April,2024</p>
+        <p class="txt5">Time: 3:00pm onwards</p>
+        <p class="txt5">IN FRONT OF DSW</p>
+      </div>
+    </div>
+  </main>
+  <div id="main2">
+    <p class="txt4">WELCOME TO</p>
+    <p class="txt6">SHUTTER <br>ADVENTURE</p>
+    <p class="txt7">Embark on an exhilarating journey where the thrill of a treasure hunt meets the art of photography in a seamlessly intertwined competition like no other. Welcome to an adventure where every clue is a gateway to the next, weaving through the scenic tapestry of our venue, guiding you not just to the treasure that lies ahead but also inviting you to capture the essence of your journey through the lens of your camera.</p>
+    <p class="but2"><button class="button-1" onclick="main()" style="margin-left: 0%;">GO BACK</button>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1kSuChlVXFC-WWRNzBQ4kJ3yrnU6V65o3L-KyRm36XommCw/viewform?usp=sf_link"><button class="button-1" >REGISTER</button></a></p>
+    
+    <div class="container">
+      <div class="flexbox">
+        <p class="txt4" style="font-size: 40px;line-height: 1.5;"> 13th April,2024
+          <br>Time: 3:00pm onwards
+          <br>IN FRONT OF DSW</p><br><br><br><br><br><br>
+        <p class="txt4">An Adventure of Stories and Snapshots</p><p class="txt8">Participants embark on a journey filled with stories waiting to be uncovered and moments waiting to be captured. The adventure promises not just the thrill of the hunt and the joy of photography but a collection of memories and experiences to cherish forever.
+          <br>Join us on this unique adventure, where your quest for treasure leads you through a myriad of stories captured in time, each photograph a testament to your journey, and every solved riddle a step closer to uncovering the ultimate prize.        </p>
+      </div>
+      <div class="flexbox">
+            <p class="txt4"> Decipher and Discover </p><p class="txt8">As participants unravel each riddle, they are led to distinct checkpoints. Here, not only is the next clue unveiled, but so too is a fresh photography theme, challenging players to capture their surroundings in a way that reflects this theme.
+        </p><p class="txt4"><br><br>Dual Challenges</p><p class="txt8">This innovative competition layout is designed to test participants on multiple fronts - their quick-wittedness and speed in solving riddles, alongside their ability to see and capture the world artistically through photography.
+        </p><p class="txt4"><br><br>Themes as Canvases</p><p class="txt8"> every checkpoint, the photography theme serves as a canvas for creativity. Participants must use their lenses to interpret and convey the theme, turning each photograph into a subjective piece of art tied to their adventure.
+        </p></div>
+      <div class="flexbox">
+        <p class="txt4">A Journey of Skills</p><p class="txt8">The event is as much about the journey as it is about the destination. It challenges adventurers to employ both their problem-solving abilities and their creative instincts, making every solved riddle and captured theme a rewarding step closer to the ultimate prize.
+        </p><p class="txt4"><br><br>Beyond the Obvious</p><p class="txt8">As adventurers progress, they're encouraged to look deeper into their surroundings - to find the extraordinary in the ordinary and capture it, blending the essence of discovery from the treasure hunt with the creative expression of the photography competition.
+        </p><p class="txt4"><br><br>Memories and Marvels</p><p class="txt8"> This dual competition is not just about winning; it's about the experiences gathered, the memories made, and the unique way participants will learn to view the world through their cameras. Each captured image and solved riddle contributes to a treasure trove of personal achievements and memories.
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <br><br><br>
+    <div class="vertical-div">
+      <p class="foot1">TATVA</p>
+      <p class="foot2">Tatva is a vibrant student organization dedicated to nurturing talent in the realms of filmmaking and content creation. We believe in empowering aspiring creators to unleash their creative potential and pursue their passion for storytelling through various mediums, including film, photography, animation, and digital content creation.</p>
+    </div>
+    <div class="vertical-div">
+    <P class="foot1">CONTACT US</P>
+    <p class="foot2">
+      <a class="fa fa-instagram" href="https://www.instagram.com/tatva_lpu"></a><a href="https://www.instagram.com/tatva_lpu" class="foot3">https://www.instagram.com/tatva_lpu</a><br>
+      <a class="fa fa-whatsapp" href="vsbrre"></a><a class="foot3">8273165573</a>
+    </p>
+  </div>
+    <div class="vertical-div">
+      <P class="foot1">GIVE FEEDBACK</P>
+      <p class="foot2">
+        <a class="foot3">CLICK BELOW TO GIVE FEEDBACK ON THE EVENT</a><br><br>
+        <a class="foot3" style="font-weight: 600;" href="https://docs.google.com/forms/d/e/1FAIpQLSfGOZK3rGsuyySM0UiuuzADwNiaWxwL1_q54_QxZ37KHDdW-g/viewform?usp=sf_link">FEEDBACK FORM</a>
+      </p>
+    </div>
+  </footer>
+  <script>
+    function km() {
+      var mainElement = document.getElementById('main');
+      var mainElement1 = document.getElementById('main2');
+      if (mainElement) {
+        mainElement.style.display = 'none';
+        mainElement1.style.display = 'block';
+      } else {
+        console.error("Element with id 'main' not found.");
+      }
+    }
+    function main() {
+      var mainElement = document.getElementById('main');
+      var mainElement1 = document.getElementById('main2');
+      if (mainElement) {
+        mainElement.style.display = 'flex';
+        mainElement1.style.display = 'none';
+      } else {
+        console.error("Element with id 'main' not found.");
+      }
+    }
+  </script>  
+</body>
+</html>
